@@ -7,8 +7,8 @@ module.exports = {
   // Twitter
   apiKey: process.env.API_KEY,
   apiSecret: process.env.API_SECRET,
-  githubClientID: process.env.GITHUB_CLIENT_ID,
-  githubClientSecret: process.env.GITHUB_CLIENT_SECRET,
+  clientID: process.env.GITHUB_CLIENT_ID,
+  clientSecret: process.env.GITHUB_CLIENT_SECRET,
   
   mongoURI: process.env.MONGODB_URI,
   cookieKey: process.env.COOKIE_KEY,
