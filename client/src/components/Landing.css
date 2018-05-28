@@ -1,0 +1,14 @@
+.headertext {
+    color: #ee6e73;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subheadertext {
+    color: #696969;
+    margin-top: -2rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
