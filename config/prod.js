@@ -4,8 +4,9 @@ module.exports = {
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
   linkedinClientID: process.env.LINKEDIN_CLIENT_ID,
   linkedinClientSecret: process.env.LINKEDIN_CLIENT_SECRET,
-  ConsumerKey: process.env.TWITTER_CONSUMER_KEY,
-  ConsumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+  // Twitter
+  apiKey: process.env.API_KEY,
+  apiSecret: process.env.API_SECRET,
   githubClientID: process.env.GITHUB_CLIENT_ID,
   githubClientSecret: process.env.GITHUB_CLIENT_SECRET,
   
