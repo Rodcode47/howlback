@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const keys = require('../config/keys');
 
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const TwitterStrategy = require('passport-twitter').Strategy;
+//const TwitterStrategy = require('passport-twitter').Strategy;
 const LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 const GitHubStrategy = require('passport-github2').Strategy;
 
@@ -79,19 +79,19 @@ passport.use(
   )
 );
 
-passport.use(
-  new TwitterStrategy({
-      consumerKey: keys.apiKey,
-      consumerSecret: keys.apiSecret,
-      callbackURL: '/auth/twitter/callback'
-    },
-    async (token, tokenSecret, profile, cb) => {
-      const existingUser = await User.findOne({ twitterId: profile.id });
-        
-      if (existingUser) {
-        return cb(null, existingUser);
-      }
-      const User = await new User({ twitterId: profile.id }).save();
-    }
-  )
-);
+//passport.use(
+//  new TwitterStrategy({
+//      consumerKey: keys.apiKey,
+//      consumerSecret: keys.apiSecret,
+//      callbackURL: '/auth/twitter/callback'
+//    },
+//    async (token, tokenSecret, profile, cb) => {
+//      const existingUser = await User.findOne({ twitterId: profile.id });
+//        
+//      if (existingUser) {
+//        return cb(null, existingUser);
+//      }
+//      const User = await new User({ twitterId: profile.id }).save();
+//    }
+//  )
+// );
