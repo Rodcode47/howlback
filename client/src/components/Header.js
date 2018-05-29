@@ -11,10 +11,8 @@ class Header extends Component {
       case false:
         return <li>Login With &raquo;
                   <a className='dropdwon-button btn fa fa-google' href="/auth/google">oogle</a>Or
-                  <a className='dropdwon-button btn fa fa-github' href="/auth/github"> Github</a>Or
                   <a className='dropdwon-button btn fa fa-linkedin-square' href="/auth/linkedin"> Linkedin</a>
               </li>;
-              //<a className='dropdwon-button btn fa fa-twitter' href="/auth/twitter"> Twitter</a>Or
       default:
         return [
           <li key="1"><Payments /></li>,

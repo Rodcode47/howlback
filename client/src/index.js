@@ -7,6 +7,7 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
 import reducers from './reducers';
+import registerServiceWorker from './registerServiceWorker';
 
 // Development only axios helpers!
 import axios from 'axios';

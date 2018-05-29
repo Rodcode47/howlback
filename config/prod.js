@@ -5,10 +5,10 @@ module.exports = {
   linkedinClientID: process.env.LINKEDIN_CLIENT_ID,
   linkedinClientSecret: process.env.LINKEDIN_CLIENT_SECRET,
   // Twitter
-  apiKey: process.env.API_KEY,
-  apiSecret: process.env.API_SECRET,
-  clientID: process.env.GITHUB_CLIENT_ID,
-  clientSecret: process.env.GITHUB_CLIENT_SECRET,
+  twitterConsumerID: process.env.TWITTER_CONSUMER_KEY,
+  twitterConsumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+  githubClientID: process.env.GITHUB_CLIENT_ID,
+  githubClientSecret: process.env.GITHUB_CLIENT_SECRET,
   
   mongoURI: process.env.MONGODB_URI,
   cookieKey: process.env.COOKIE_KEY,

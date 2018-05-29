@@ -29,33 +29,6 @@ module.exports = app => {
     }
   );
 
-//  app.get(
-//    '/auth/twitter',
-//    passport.authenticate('twitter')
-//  );
-
-//  app.get(
-//    '/auth/twitter/callback', 
-//    passport.authenticate('twitter', { failureRedirect: '/login' }),
-//    (req, res) => {
-//      // Successful authentication, redirect home.
-//      res.redirect('/surveys');
-//    }
-//  );
-
-  app.get(
-    '/auth/github',
-    passport.authenticate('github')
-  );
- 
-  app.get(
-    '/auth/github/callback',
-    passport.authenticate('github', { failureRedirect: '/login' }),
-    (req, res) => {
-      // Successful authentication, redirect home.
-      res.redirect('/surveys');
-  });
-
   app.get('/api/logout', (req, res) => {
     req.logout();
     res.redirect('/');

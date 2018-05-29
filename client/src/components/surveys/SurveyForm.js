@@ -34,6 +34,10 @@ class SurveyForm extends Component {
             Next
             <i className="material-icons right">done</i>
           </button>
+          <button type="submitD" className="teal btn-flat right white-text mr-3">
+            Save As Draft
+            <i className="material-icons right">save</i>
+          </button>
         </form>
       </div>
     );

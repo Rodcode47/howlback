@@ -7,7 +7,7 @@ const Landing = () => {
     <div>
       <hr/>
         <h2 className="headertext">Howlback!</h2><br/>
-          <h5 className="subheadertext">Collect feedback form your clients!</h5>
+          <h5 className="subheadertext">Collect feedback form your clients Only at <small className="fa fa-money"> €1 </small> per Email!</h5>
       <hr/>
       <div className="alert alert-success alert-dismissible fade show" role="alert">
         <button type="button" className="close" data-dismiss="alert" aria-label="Close">
@@ -20,7 +20,7 @@ const Landing = () => {
             </a>
           </div>
           <div className="p-2">
-            <h5 className="alert-heading"><a href="https://geekflash.herokuapp.com" target="_new">[#1 Full-Stack] React and Redux</a></h5>
+            <h5 className="alert-heading"><a href="https://kodeflash.herokuapp.com/blogs" target="_new">[#1 Full-Stack] React and Redux</a></h5>
             <p>
               Master React and Redux! by building a massive and awesome web application. We will use advanced features of React, 
               Redux, Express, and Mongo. By putting each concept into a fullstack web application. Other technologies feature like 
