@@ -6,11 +6,11 @@ const Landing = () => {
   return (
     <div>
       <hr/>
-        <h2 className="headertext">Howlback!</h2><br/>
-          <h5 className="subheadertext">Collect feedback form your clients Only at <small className="fa fa-money"> €1 </small> per 5 Email!</h5>
+        <h2 className="headertext text-monospace"><u>Howlback!</u></h2><br/>
+          <h5 className="subheadertext">Collect feedback form your clients Only at <small className="fa fa-money"> $5 </small> For 8 Credits!</h5>
       <hr/>
       <div className="alert alert-success alert-dismissible fade show" role="alert">
-        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+        <button type="button" className="close" data-dismiss="alert" aria-label="Close" title="Close This Ad">
           <span aria-hidden="true">&times;</span>
         </button>
         <div className="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
@@ -20,7 +20,7 @@ const Landing = () => {
             </a>
           </div>
           <div className="p-2">
-            <h5 className="alert-heading"><a href="https://kodeflash.herokuapp.com/blogs" target="_new">[#1 Full-Stack] React and Redux</a></h5>
+            <h5 className="alert-heading" title="Visit Our Blog"><a href="https://kodeflash.herokuapp.com/blogs" target="_new">[#1 Full-Stack] React and Redux</a></h5>
             <p>
               Master React and Redux! by building a massive and awesome web application. We will use advanced features of React, 
               Redux, Express, and Mongo. By putting each concept into a fullstack web application. Other technologies feature like 
@@ -30,7 +30,7 @@ const Landing = () => {
               <li>&#x2713; Develop modern, complex, responsive and scalable Javascript front ends.</li>
               <li>&#x2713; Fully understand the advanced features behind a powerful React and Redux web application.</li>
             </ul>
-            <a href="https://github.com/Rodcode47/Crowdfid-App" target="_new" className="btn btn-outline-danger btn-sm">Download the Code!</a>
+            <a href="https://github.com/Rodcode47/Crowdfid-App" target="_new" className="btn btn-outline-danger btn-sm" title="Get Project Source Code">Download the Code! <i className="fas fa-download"></i></a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ const Landing = () => {
             experiences through your question.
           </p>
           <p>Our goal is to creat great communication between our clients and there clients with easy</p>
-          <a className="btn btn-lg btn-primary" href="/surveys" role="button">View Your Surveys &raquo;</a>
+          <a className="btn btn-lg btn-primary" href="/surveys" role="button" title="View All Your Surveys">View Your Surveys &raquo;</a>
         </div>
       </main>
     </div>

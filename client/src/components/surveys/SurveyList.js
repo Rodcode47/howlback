@@ -21,9 +21,9 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-            <a className="fa fa-thumbs-up"> Yes: {survey.yes}</a>
-            <a className="fa fa-thumbs-down"> No: {survey.no}</a>
-            <button type="button" className="badge badge-pill badge-info float-right fa fa-info-circle"> Info</button>
+            <a className="fas fa-thumbs-up" title="# Clients Said YES! far fa-smile"> Yes: {survey.yes}</a>
+            <a className="fas fa-thumbs-down" title="# Clients Said NO!"> No: {survey.no}</a>
+            <button type="button" className="badge badge-pill badge-info float-right fa fa-info-circle" title="View Feedback Post"> Info</button>
           </div>
         </div>
       );
