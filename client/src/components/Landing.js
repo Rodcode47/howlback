@@ -7,7 +7,7 @@ const Landing = () => {
     <div>
       <hr/>
         <h2 className="headertext">Howlback!</h2><br/>
-          <h5 className="subheadertext">Collect feedback form your clients Only at <small className="fa fa-money"> €1 </small> per Email!</h5>
+          <h5 className="subheadertext">Collect feedback form your clients Only at <small className="fa fa-money"> €1 </small> per 5 Email!</h5>
       <hr/>
       <div className="alert alert-success alert-dismissible fade show" role="alert">
         <button type="button" className="close" data-dismiss="alert" aria-label="Close">
