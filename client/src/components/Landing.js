@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import styles from './Landing.css';
 
@@ -10,7 +10,7 @@ const Landing = () => {
           <h5 className="subheadertext text-info">Collect feedback from your clients, 
             <i className="text-secondary"> easy</i> and <i className="text-secondary">fast</i> Only at <i className="text-danger">$5</i> for <b>8</b> Credits!</h5>
       <hr/>
-      <div className="alert alert-success alert-dismissible fade show" role="alert">
+      <div className="alert alert-success alert-dismissible fade show shadow p-3 mb-5 rounded" role="alert">
         <button type="button" className="close" data-dismiss="alert" aria-label="Close" title="Close This Ad">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -35,8 +35,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <main role="main" className="blue-grey" style={{ textAlign: 'center' }}>
-        <div className="jumbotron">
+      <main role="main" className="" style={{ textAlign: 'center' }}>
+        <div className="jumbotron shadow p-3 mb-5 rounded">
           <h1>Welcome To Feedback</h1>
           <p className="lead">
             Do you want to <b>send a survey to your clients and get feedback</b>, easy and fast great your in 
@@ -44,7 +44,7 @@ const Landing = () => {
             experiences through your question. <b>One click send to thousands of your Clients</b>. <i className="text-info">YES 1 Click</i>
           </p>
           <p className="text-danger">Our goal is to create great medium that communication flawlessly with you and your clients.</p>
-          <a className="btn btn-lg btn-primary" href="/surveys" role="button" title="View All Your Surveys">View Your Surveys &raquo;</a>
+          <a className="btn btn-lg btn-primary" href="https://kodeflash.herokuapp.com/" role="button" title="Visit our blog for more samples">Visit our blog &raquo;</a>
         </div>
       </main>
     </div>
