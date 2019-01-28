@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import styles from './Landing.css';
 
 const Landing = () => {
@@ -37,13 +36,18 @@ const Landing = () => {
       </div>
       <main role="main" className="" style={{ textAlign: 'center' }}>
         <div className="jumbotron shadow p-3 mb-5 rounded">
+          <p className="alert alert-success alert-dismissible fade show" role="alert">
+            Our goal is to create great medium that communication flawlessly with you and your clients.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </p>
           <h1>Welcome To Feedback</h1>
           <p className="lead">
             Do you want to <b>send a survey to your clients and get feedback</b>, easy and fast great your in 
             the right place. Howlback you will create surveys that measures your clients opinions or 
             experiences through your question. <b>One click send to thousands of your Clients</b>. <i className="text-info">YES 1 Click</i>
           </p>
-          <p className="text-danger">Our goal is to create great medium that communication flawlessly with you and your clients.</p>
           <a className="btn btn-lg btn-primary" href="https://kodeflash.herokuapp.com/" role="button" title="Visit our blog for more samples">Visit our blog &raquo;</a>
         </div>
       </main>
