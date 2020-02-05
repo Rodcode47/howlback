@@ -10,7 +10,7 @@ class Header extends Component {
         return;
       case false:
         return <li>Login With &raquo;
-                  <a className='dropdwon-button btn fab fa-google' href="/auth/google" title="Login With Google">oogle</a>Or
+                  <a className='dropdwon-button btn fab fa-google' href="/auth/google" title="Login With Google"> Google</a>Or
                   <a className='dropdwon-button btn fab fa-linkedin' href="/auth/linkedin" title="Login With Linkedin"> Linkedin</a>
               </li>;
       default:
