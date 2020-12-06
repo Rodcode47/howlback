@@ -12,21 +12,21 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "cd client && yarn run start",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\" \"yarn run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix client && yarn run build --prefix client",
     "webhook": "./sendgrid_webhook.sh"
   },
   "author": "Rodney",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "concurrently": "^3.5.1",
     "cookie-session": "^1.4.0",
     "express": "^4.16.3",
     "localtunnel": "^1.9.0",
     "lodash": "^4.17.10",
     "mongoose": "^5.1.2",
-    "nodemon": "^1.17.5",
+    "node-forge": "^0.10.0",
+    "nodemon": "^2.0.6",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "passport-linkedin-oauth2": "^2.0.0",
@@ -35,5 +35,8 @@
     "react-transition-group": "^2.3.1",
     "sendgrid": "^5.2.3",
     "stripe": "^6.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   }
 }
