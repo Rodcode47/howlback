@@ -52,3 +52,15 @@ https://howlback.herokuapp.com/
 # Authorized redirect URIs callbacks
 http://localhost:3000/auth/google/callback
 https://howlback.herokuapp.com/auth/google/callback
+
+#### …or create a new repository on the command line
+echo "# howlback" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:Rodcode47/howlback.git
+git push -u origin master
+
+#### …or push an existing repository from the command line
+git remote add origin git@github.com:Rodcode47/howlback.git
+git push -u origin master

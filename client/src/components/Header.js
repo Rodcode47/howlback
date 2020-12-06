@@ -12,13 +12,9 @@ class Header extends Component {
         return <li>Login With &raquo;
                   <a className='dropdwon-button btn fab fa-google' href="/auth/google" title="Login With Google"> Google</a>Or
                   <a className='dropdwon-button btn fab fa-linkedin' href="/auth/linkedin" title="Login With Linkedin"> Linkedin</a>
-              </li>;
+                </li>;
       default:
         return [
-          <li key="1"><Payments /></li>,
-          <li key="3" title="Credit Count" style={{ margin: '0 10px' }}>
-            Credits: {this.props.auth.credits}
-          </li>,
           <li key="2"><a className='dropdwon-button btn fas fa-sign-out-alt' href="/api/logout" title="Logout"> Logout</a></li>
         ];
     }
@@ -42,13 +38,23 @@ class Header extends Component {
             to={this.props.auth ? '/surveys' : '/'}
             className="left brand-logo"
           >
-          <button type="button" className="btn btn-outline-success ml-3" title="All Feedback Surveys">
-            <img src="assets/icons/script.png" alt="Feeds" /> Feeds
-          </button>
+            <button type="button" className="btn btn-outline-success ml-3 mb-2" title="All Feedback Surveys">
+              <img src="assets/icons/script.png" alt="Feeds" /> Feeds
+            </button>
           </Link>
           
           <ul className=" mt-2" style={{ margin: '0 0 0 145px' }}>
             {this.renderOtherLinks()}
+            {this.props.auth ? 
+              <div>
+                <li key="1"><Payments /></li>
+                <li key="3" title="Credit Count" style={{ margin: '0 10px' }}>
+                   <span className="h4">Credits: {this.props.auth.credits}</span>
+                </li>
+              </div>
+              :
+              null
+            }
           </ul>
           <ul className="right">
             {this.renderContent()}

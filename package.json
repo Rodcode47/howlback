@@ -4,14 +4,14 @@
   "description": "MERN App MongoDB X-press React Nodejs Redux SendGrid for mailer Stripe for payments its a full-stack",
   "main": "index.js",
   "engines": {
-    "node": "11.11.0",
-    "npm": "6.7.0"
+    "node": "12.19.0",
+    "yarn": "1.22.5"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
+    "client": "cd client && yarn run start",
     "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "webhook": "./sendgrid_webhook.sh"
@@ -21,15 +21,15 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
-    "cookie-session": "^2.0.0-beta.3",
+    "cookie-session": "^1.4.0",
     "express": "^4.16.3",
     "localtunnel": "^1.9.0",
     "lodash": "^4.17.10",
     "mongoose": "^5.1.2",
     "nodemon": "^1.17.5",
-    "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0",
-    "passport-linkedin-oauth2": "^1.5.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-linkedin-oauth2": "^2.0.0",
     "path-parser": "^4.1.0",
     "react-alert": "^4.0.4",
     "react-transition-group": "^2.3.1",
