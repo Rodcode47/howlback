@@ -20,15 +20,14 @@ const Landing = () => {
             </a>
           </div>
           <div className="p-2">
-            <h5 className="alert-heading" title="Visit Our Blog"><a href="https://kodeflash.com/posts" target="_new"><b>[#1 Full-Stack] React and Redux</b></a></h5>
+            <h5 className="alert-heading" title="Visit Our Blog"><a href="https://kodeflash.com/posts" target="_new"><b>Powered by JavaScript (Node.js & React.js)</b></a></h5>
             <p>
-              Master React and Redux! by building a massive and awesome web application. We will use advanced features of React, 
-              Redux, Express, and MongoDB. By putting each concept into a full-stack web application. Other technologies feature like 
-              SendGrid (For Handling Email), and Stripe (For Billing/Payments) are used in this application.
+              HowlBack is a Full-Stack application built with <b>React, Redux, Node, Express,</b> and <b>MongoDB</b>. Putting each concept into a the application from basic to advanced. Other advanced technology features implemented are
+              <b>SendGrid</b> (For Handling Email), and <b>Stripe</b> (For Billing/Payments).
             </p>
             <ul>
-              <li>&#x2713; Develop modern, complex, responsive and scalable Javascript front ends.</li>
-              <li>&#x2713; Fully understand the advanced features behind a powerful React and Redux web application.</li>
+              <li>&#x2713; Develop modern, complex, and scalable Javascript front-ends.</li>
+              <li>&#x2713; Used advanced features behind the powerful React and Redux.</li>
             </ul>
             <a href="https://github.com/Rodcode47/howlback" target="_new" className="btn btn-outline-danger btn-sm" title="Get Project Source Code">Download the Code! <i className="fas fa-download"></i></a>
           </div>
